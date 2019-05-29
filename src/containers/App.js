@@ -28,16 +28,6 @@ class App extends React.Component {
             </div>
         );
     }
-    removeTodo(id) {
-        const remainder = this.state.data.filter(todo => todo.id !== id);
-        this.setState({data: remainder});
-    }
-    render() {
-        return (
-            <div className={style.TodoApp}>
-                <p>Tutaj pojawią się komponenty naszej aplikacji.</p>
-            </div>
-        );
 }
 
 export default App;
