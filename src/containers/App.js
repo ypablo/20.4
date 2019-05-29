@@ -24,20 +24,10 @@ class App extends React.Component {
     render() {
         return (
             <div className={style.TodoApp}>
-                Tutaj pojawią się komponenty naszej aplikacji.
-            </div>
-        );
-    }
-    removeTodo(id) {
-        const remainder = this.state.data.filter(todo => todo.id !== id);
-        this.setState({data: remainder});
-    }
-    render() {
-        return (
-            <div className={style.TodoApp}>
                 <p>Tutaj pojawią się komponenty naszej aplikacji.</p>
             </div>
         );
+    }
 }
 
 export default App;
